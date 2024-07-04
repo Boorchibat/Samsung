@@ -14,6 +14,60 @@
             color: black;
         }
 
+        .dropdown:hover .dropdown-content {
+            display: flex;
+            /* make tag re appear */
+
+            opacity: 1;
+        }
+
+        .dropdown:hover .dropdown-button {
+            background-color: black;
+            color: white;
+        }
+
+        .dropdown-button {
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        .dropdown-content {
+            display: none;
+            /* make tag disappear */
+            opacity: 0;
+
+            position: absolute;
+            flex-direction: column;
+            align-items: center;
+
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100vw;
+            height: 100vh;
+            z-index: 10;
+            top: 71px;
+            left: 0;
+
+            border: 1px solid black;
+        }
+
+        .dropdown-content-buttons {
+            background-color: white;
+
+            width: 600px;
+
+            display: flex;
+            flex-direction: column;
+
+            padding: 50px;
+            padding-top: 0;
+
+            gap: 15px;
+
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
         .Symbol:hover {
             background-color: black;
             color: white;
@@ -41,11 +95,21 @@
             width: 100%;
             text-align: center;
         }
+
         .button {
-            position: absolute; 
+            position: absolute;
             right: 0;
+        }
 
-
+        .s3:hover {
+            background-color: rgb(223, 237, 236);
+            border-radius: 15px;
+            height: 40px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            align-items: center;
         }
     </style>
 </head>
@@ -59,20 +123,260 @@
                 d="M0,11.651V10.511H3.994v1.45a1.334,1.334,0,0,0,1.494,1.346A1.3,1.3,0,0,0,6.932,12.3a1.833,1.833,0,0,0-.026-1.113C6.133,9.243.851,8.363.18,5.333a5.347,5.347,0,0,1-.025-2.02C.567.88,2.705,0,5.359,0c2.113,0,5.025.492,5.025,3.754V4.816H6.674V3.884A1.275,1.275,0,0,0,5.282,2.537a1.25,1.25,0,0,0-1.365,1.01,2.021,2.021,0,0,0,.026.777c.437,1.734,6.081,2.667,6.7,5.8a6.943,6.943,0,0,1,.025,2.46C10.307,15.068,8.091,16,5.412,16,2.6,16,0,14.99,0,11.651ZM48.392,11.6V10.46h3.943v1.424A1.312,1.312,0,0,0,53.8,13.23a1.286,1.286,0,0,0,1.443-.984,1.759,1.759,0,0,0-.025-1.088c-.748-1.915-5.979-2.8-6.648-5.825a5.215,5.215,0,0,1-.026-1.994C48.959.932,51.1.052,53.7.052c2.088,0,4.973.518,4.973,3.728V4.816H54.989V3.91a1.268,1.268,0,0,0-1.365-1.346,1.2,1.2,0,0,0-1.34.984,2.017,2.017,0,0,0,.025.777c.412,1.734,6,2.641,6.623,5.747a6.806,6.806,0,0,1,.025,2.434c-.361,2.486-2.551,3.392-5.2,3.392C50.97,15.9,48.392,14.887,48.392,11.6Zm14.121.545a5.876,5.876,0,0,1-.025-.985V.44H66.25V11.495a4.111,4.111,0,0,0,.025.57,1.468,1.468,0,0,0,2.835,0,3.97,3.97,0,0,0,.026-.57V.44H72.9V11.158c0,.285-.026.829-.026.985-.257,2.8-2.448,3.7-5.179,3.7S62.771,14.938,62.513,12.143Zm30.974-.156A7.808,7.808,0,0,1,93.435,11V4.712c0-.259.025-.725.051-.985C93.821.932,96.063.052,98.717.052c2.629,0,4.947.88,5.206,3.676a7.185,7.185,0,0,1,.025.985V5.2h-3.762V4.376a3.1,3.1,0,0,0-.051-.57,1.553,1.553,0,0,0-2.964,0,3.088,3.088,0,0,0-.051.7V11.34a4.17,4.17,0,0,0,.026.57A1.472,1.472,0,0,0,98.717,13a1.406,1.406,0,0,0,1.52-1.087,2.09,2.09,0,0,0,.026-.57V9.165h-1.52V6.99H104V11a7.674,7.674,0,0,1-.052.984c-.257,2.718-2.6,3.676-5.231,3.676S93.744,14.705,93.487,11.987ZM41.049,15.378l-.1-13.825L38.369,15.378H34.607L32.055,1.553l-.1,13.825H28.242L28.551.466h6.056l1.881,11.651L38.369.466h6.055l.335,14.912Zm-19.79,0L19.249,1.553,17.187,15.378H13.168L15.9.466h6.623l2.732,14.912Zm62.977-.155L80.5,2.822l.206,12.4H77.046V.466h5.514l3.5,12.013L85.859.466h3.685V15.224Z"
                 transform="translate(8 8)"></path>
         </svg>
-        <a class="Symbol" style="margin-left: 70px; text-decoration: none;" href="">Shop</a>
-        <a class="Symbol" style="margin-left: 10px; text-decoration: none;" href="">AI</a>
-        <a class="Symbol" style="margin-left: 10px; text-decoration: none;" href="">Mobile</a>
-        <a class="Symbol" style="margin-left: 10px; text-decoration: none;" href="">Tv & Audio</a>
-        <a class="Symbol" style="margin-left: 10px; text-decoration: none;" href="">Appliances</a>
-        <a class="Symbol" style="margin-left: 10px; text-decoration: none;" href="">Computing</a>
-        <a class="Symbol" style="margin-left: 10px; text-decoration: none;" href="">Displays</a>
-        <a class="Symbol" style="margin-left: 10px; text-decoration: none;" href="">Accessories</a>
-        <a class="Symbol" style="margin-left: 10px; text-decoration: none;" href="">SmartThings</a>
-        <a class="Symbol" style="margin-left: 190px; text-decoration: none;" href="">Explore</a>
-        <a class="Symbol" style="margin-left: 10px; text-decoration: none;" href="">Support</a>
-        <a class="Symbol" style="margin-left: 10px;" text-decoration: none;href="">For Business</a>
+        <div class="menu-container">
+            <div style="display: flex; gap: 20px">
+                <div class="dropdown">
+                    <a class="dropdown-button" style="margin-left: 70px;">Shop</a>
+
+                    <div class="dropdown-content">
+                        <div class="dropdown-content-buttons">
+                            <a>Offers</a>
+                            <a>All Offers</a>
+                            <a>Smartphones</a>
+                            <a>TV & Home Theater</a>
+                            <a>Appliances</a>
+                            <a>Watches & Audio</a>
+                            <a>Tablets & Computing</a>
+                            <a>Monitor, Memory & Storage</a>
+                            <a>Bundle Deals</a>
+                            <a>Back to School Offers NEW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div style="display: flex; gap: 20px">
+                <div class="dropdown">
+                    <a class="dropdown-button" style="margin-left: 0px;">AI</a>
+
+                    <div class="dropdown-content">
+                        <div class="dropdown-content-buttons">
+                            <a>AI for All</a>
+                            <a>Galaxy Mobile AI</a>
+                            <a>Bespoke AI appliances</a>
+                            <a>Samsung AI TV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div style="display: flex; gap: 20px">
+                <div class="dropdown">
+                    <a class="dropdown-button" style="margin-left: 0px;">Mobile</a>
+
+                    <div class="dropdown-content">
+                        <div class="dropdown-content-buttons">
+                            <a>Discover Mobile</a>
+                            <a>Galaxy AI</a>
+                            <a>Galaxy Smartphone</a>
+                            <a>Galaxy Tab</a>
+                            <a>Galaxy Watch</a>
+                            <a>Galaxy Buds</a>
+                            <a>Galaxy Accessories</a>
+                            <a>Why Switch</a>
+                            <a>Why Galaxy</a>
+                            <a>Certified Re-Newed</a>
+                            <a>onnected Galaxy</a>
+                            <a>Mobile Buying Guide</a>
+                            <a>Shop All Mobile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div style="display: flex; gap: 20px">
+                <div class="dropdown">
+                    <a class="dropdown-button" style="margin-left: 0px;">Tv & Audio</a>
+
+                    <div class="dropdown-content">
+                        <div class="dropdown-content-buttons">
+                            <a>TVs</a>
+                            <a>Discover TVs</a>
+                            <a> Samsung Exclusive HOT</a>
+                            <a>TV & Soundbar Bundles HOT</a>
+                            <a>Why Neo QLED</a>
+                            <a>Why OLED</a>
+                            <a>Why QLED 4K</a>
+                            <a>Why The Frame</a>
+                            <a>The Terrace</a>
+                            <a>Crystal 4K UHD</a>
+                            <a>Shop All TVs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div style="display: flex; gap: 20px">
+                <div class="dropdown">
+                    <a class="dropdown-button" style="margin-left: 0px;">Appliances</a>
+
+                    <div class="dropdown-content">
+                        <div class="dropdown-content-buttons">
+                            <a>TVs</a>
+                            <a> Discover TVs</a>
+                            <a>Samsung Exclusive HOT</a>
+                            <a>TV & Soundbar Bundles HOT</a>
+                            <a> Why Neo QLED</a>
+                            <a> Why OLED</a>
+                            <a> Why QLED 4K</a>
+                            <a> Why The Frame</a>
+                            <a>The Terrace</a>
+                            <a> Crystal 4K UHD</a>
+                            <a>Shop All TVs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div style="display: flex; gap: 20px">
+                <div class="dropdown">
+                    <a class="dropdown-button" style="margin-left: 0px;">Computing</a>
+
+                    <div class="dropdown-content">
+                        <div class="dropdown-content-buttons">
+                            <a>Galaxy Books</a>
+                            <a>Discover Galaxy Books</a>
+                            <a> Galaxy Book4 Edge NEW</a>
+                            <a> Galaxy Book4 Series</a>
+                            <a> Galaxy Book4 Ultra</a>
+                            <a>Galaxy Book4 Pro 360</a>
+                            <a>Galaxy Book4 Pro</a>
+                            <a>Galaxy Book4 360</a>
+                            <a>Galaxy Book4</a>
+                            <a>Windows 11</a>
+                            <a> Shop all Galaxy Books</a>
+                            <a>Galaxy Books Download Center </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div style="display: flex; gap: 20px">
+                <div class="dropdown">
+                    <a class="dropdown-button" style="margin-left: 0px;">Displays</a>
+
+                    <div class="dropdown-content">
+                        <div class="dropdown-content-buttons">
+                            <a>Monitors</a>
+                            <a>Discover Monitors</a>
+                            <a>Discover Odyssey Gaming</a>
+                            <a>OLED Gaming Monitor</a>
+                            <a>Smart Monitor</a>
+                            <a>High Resolution</a>
+                            <a>Business Monitors</a>
+                            <a>Shop all Monitors</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div style="display: flex; gap: 20px">
+                <div class="dropdown">
+                    <a class="dropdown-button" style="margin-left: 0px;">Accessories</a>
+
+                    <div class="dropdown-content">
+                        <div class="dropdown-content-buttons">
+                            <a>Mobile Accessories</a>
+                            <a> All Accessories</a>
+                            <a>Phone Accessories</a>
+                            <a>Tablet Accessories</a>
+                            <a>Wearable Accessories</a>
+                            <a>Buds Accessories</a>
+                            <a>SmartThings Accessories</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div style="display: flex; gap: 20px">
+                <div class="dropdown">
+                    <a class="dropdown-button" style="margin-left: 0px;">SmartThings</a>
+
+                    <div class="dropdown-content">
+                        <div class="dropdown-content-buttons">
+                            <a>Overview</a>
+                            <a>App</a>
+                            <a> Experiences</a>
+                            <a>Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div style="display: flex; gap: 20px">
+                <div class="dropdown">
+                    <a class="dropdown-button" style="margin-left: 100px;">Explore</a>
+
+                    <div class="dropdown-content">
+                        <div class="dropdown-content-buttons">
+                            <a>Collections</a>
+                            <a>Gaming Portal</a>
+                            <a>Work From Home</a>
+                            <a> Buying Guides</a>
+                            <a>Mobile Buying Guide</a>
+                            <a>TV Buying Guide</a>
+                            <a>Home Appliance Buying Guides</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div style="display: flex; gap: 20px">
+                <div class="dropdown">
+                    <a class="dropdown-button" style="margin-left: 0px;">Support</a>
+
+                    <div class="dropdown-content">
+                        <div class="dropdown-content-buttons">
+                            <a>Product Support</a>
+                            <a>Support Home</a>
+                            <a> Register a Product</a>
+                            <a> Manuals & Software</a>
+                            <a>Interactive Simulators</a>
+                            <a>>Warranty Information</a>
+                            <a>Video Tutorial </a>
+                            <a>Community </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div style="display: flex; gap: 20px">
+                <div class="dropdown">
+                    <a class="dropdown-button" style="margin-left: 0px;">For Business</a>
+
+                    <div class="dropdown-content">
+                        <div class="dropdown-content-buttons">
+                            <a>Business Home</a>
+                            <a>Discover Business</a>
+                            <a>Business Account</a>
+                            <a> Volume Pricing</a>
+                            <a> Business Trade-In</a>
+                            <a>Business Financing</a>
+                            <a>Tax Exemption</a>
+                            <a> Product Support</a>
+                            <a>Order Support</a>
+                            <a>Why Buy Direct</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div style="background-image:url(unfold\ your\ galaxy\ ai.webp);height: 90vh; width: 100%;margin-top: 30px;position: relative;">
+
+    </div>
+    <div
+        style="background-image:url(unfold\ your\ galaxy\ ai.webp);height: 90vh; width: 100%;margin-top: 30px;position: relative;">
         <div style="width: 600px; height: 300px;">
             <h1 style="color: white;font-size: 19px;margin-left: 90px;padding-top: 160px;">Exclusive Offer</h1>
             <h1 style="font-size: 50px;margin-left: 90px;color: white;">Unfold your story with Galaxy Ai</h1>
@@ -92,11 +396,13 @@
             </svg>
         </button>
         <button class="button" style="border-radius: 50px;background-color: silver;">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-badge-right" width="44"
+                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M13 7h-6l4 5l-4 5h6l4 -5z" />
-              </svg>
-          </svg>
+            </svg>
+            </svg>
         </button>
 
     </div>
@@ -131,7 +437,8 @@
             <p class="center" style="bottom: 170px;font-size: 22px;">Save Up Too 990$</p>
         </div>
 
-        <div style="display: flex;width: 100%;height: 100vh; flex-direction: column; margin-top: 20px;margin-right: 30px;">
+        <div
+            style="display: flex;width: 100%;height: 100vh; flex-direction: column; margin-top: 20px;margin-right: 30px;">
             <div style="display: flex; height: 100%;overflow: hidden;">
                 <div
                     style=" width: 360px;height: 100%;background-color: #f4f4f4;border-radius: 50px;overflow: hidden;position: relative;margin-bottom: 20px; ">
@@ -165,13 +472,201 @@
             </div>
         </div>
     </div>
-<div style="background-image: url(samsung\ img\ 2.webp); height: 50vh; width: 100%;margin-top: 80px;">
-    <div style="width: 650px;height: 300px;">
-<p style="margin-left: 90px;padding-top: 50px;font-size: 16px;font-weight: bold;">App Exclusive Offer</p> 
-<p style="margin-left: 90px;font-size: 55px;margin-bottom: 100px;">Get $50 off</p>
-<p style="margin-left: 90px;font-size: 20px;">When you spend $500 or more on your first Shop Samsung App purchase.</p>
-</div>
-</div>
+    <div style="background-image: url(samsung\ img\ 2.webp); height: 50vh; width: 100%;margin-top: 80px;">
+        <div style="width: 650px;height: 300px;">
+            <h1 style="margin-left: 90px;padding-top: 50px; font-size: 16px;font-weight: bold;">App Exclusive Offer</h1>
+            <p style="margin:0;padding-left: 90px;font-size: 55px;font-weight: bold;">Get $50 off</p>
+            <p style="margin-left: 90px;font-size: 20px;">When you spend $500 or more on your first Shop Samsung App
+                purchase.</p>
+            <a style="margin-left: 90px;"
+                href="https://play.google.com/store/apps/details?id=com.samsung.ecomm&referrer=utm_source%3Ds_com%26utm_medium%3Dhomepage%26utm_campaign%3DFTO_scomhomepage_062124&iosparam=samsungestore%253A%252F%252Fgototab%2523tab%253D1%2523utm_source%253Ds_com%2523utm_medium%253Dhomepage%2523utm_campaign%253D253DFTO_scomhomepage_062124"><button
+                    style="height: 40px;width: 130px;background-color: black;color: white;border-radius: 20px;">Download
+                    Now
+                </button></a>
+        </div>
+    </div>
+    <div style="background-image: url(slide\ 3.avif);height: 110vh;width: 100%;">
+        <center>
+            <h1 style="font-size: 40px;margin: 0;padding-top: 40px;">Mobile & Computing</h1>
+            <div style="margin-top: 20px;">
+                <a class="s3" style="font-size: 20px;font-weight: bold;color: black;" href="">Galaxy S24 Ultra</a>
+                <a class="s3"
+                    style="margin-left: 35px; text-decoration: none;font-size: 20px;font-weight: bold;color: black;"
+                    href="">Galaxy S24+</a>
+                <a class="s3"
+                    style="margin-left: 35px; text-decoration: none;font-size: 20px;font-weight: bold;color: black;"
+                    href="">Galaxy Book4 Edge</a>
+                <a class="s3"
+                    style="margin-left: 35px; text-decoration: none;font-size: 20px;font-weight: bold;color: black;"
+                    href="">Galaxy Tab S9 Series</a>
+                <a class="s3"
+                    style="margin-left: 35px; text-decoration: none;font-size: 20px;font-weight: bold;color: black;"
+                    href="">Galaxy Watch6 Series</a>
+            </div>
+            <div style="margin-top: 480px;">
+                <h1 style="margin-bottom: 20px;font-size: 50px;">Galaxy S24 Ultra</h1>
+                <p style="font-size: 20px;margin: 0;">Save up to $900. Get up to $750 trade in Credit and More </p>
+            </div>
+            <a style="text-decoration: none;"
+                href="https://www.samsung.com/us/smartphones/galaxy-s24-ultra/buy/galaxy-s24-ultra-512gb-unlocked-sm-s928ulbfxaa/">
+                <button
+                    style="font-size: 15px;height: 50px;width: 100px;border-radius: 30px;background-color: black;color: white;margin-top: 10px;">
+                    Buy now
+                </button></a>
+        </center>
+    </div>
+    <div style="background-image: url(family\ pic.avif);height: 110vh;width: 100%;">
+        <center>
+            <h1 style="font-size: 42px;margin: 0;padding-top: 55px;">Tv & Audio</h1>
+            <div style="margin-top: 24px;font-weight: lighter;">
+                <a class="s3" style="font-size: 20px;font-weight: bold;color: black;" href="">Neo QLED QN90C
+                </a>
+                <a class="s3"
+                    style="margin-left: 35px; text-decoration: none;font-size: 20px;font-weight: bold;color: black;"
+                    href=""> 98” QN90D</a>
+                <a class="s3"
+                    style="margin-left: 35px; text-decoration: none;font-size: 20px;font-weight: bold;color: black;"
+                    href="">Q990D Soundbar</a>
+                <div style="margin-top: 460px;">
+                    <h1 style="font-size: 50px;margin: 0;">Let your fav shows sparkle and shine</h1>
+                    <p style="font-size: 20px;margin: 0;">Save up to 2,600 on Samsung Neo QLED 4k QN90C</p>
+                    <a style="text-decoration: none;"
+                        href="https://www.samsung.com/us/televisions-home-theater/tvs/samsung-neo-qled-4k/85-class-qn90c-samsung-neo-qled-4k-smart-tv-2023-qn85qn90cafxza/?AID=11497444&PID=1225267&CID=afl-ecomm-cjn-cha-092118-53005&cjevent=652ec4dad7d511ec80a101dd0a82b82d&utm_source=Slickdeals+LLC&utm_medium=affiliate&utm_campaign=11497444&utm_content=1225267&cjdata=MXxOfDB8WXww">
+                        <button
+                            style="font-size: 15px;height: 50px;width: 100px;border-radius: 30px;background-color: black;color: white;margin-top: 10px;">
+                            Buy now
+                        </button></a>
+        </center>
+    </div>
+    <div style="background-image: url(real\ final.avif);height: 110vh;width: 100;">
+        <center>
+            <h1 style="font-size: 42px;margin: 0;padding-top: 45px;">Home appliances</h1>
+            <div style="margin-top: 24px;font-weight: lighter;">
+                <a class="s3" style="font-size: 20px;font-weight: bold;color: black;" href="">Bundle Deals
+                </a>
+                <a class="s3"
+                    style="margin-left: 35px; text-decoration: none;font-size: 20px;font-weight: bold;color: black;"
+                    href=""> Bespoke Refrigerators</a>
+                <a class="s3"
+                    style="margin-left: 35px; text-decoration: none;font-size: 20px;font-weight: bold;color: black;"
+                    href="">Bespoke Laundary</a>
+                <a class="s3"
+                    style="margin-left: 35px; text-decoration: none;font-size: 20px;font-weight: bold;color: black;"
+                    href="">Bespoke AI Laundary</a>
+                <div style="margin-top: 480px;">
+                    <h1 style="font-size: 50px;margin: 0;">Summer Deals worth Celebrating</h1>
+                    <p style="font-size: 20px;margin: 0;">Enjoy our summer savings, get up to to $2,050 off select
+                        appliances. Plus, bundle up and save an additional extra $600.</p>
+                    <a style="text-decoration: none;"
+                        href="https://www.samsung.com/us/shop/all-deals/home-appliance-and-smart-home-sales/">
+                        <button
+                            style="font-size: 15px;height: 50px;width: 150px;border-radius: 30px;background-color: black;color: white;margin-top: 10px;">
+                            Shop all Deals
+                        </button></a>
+        </center>
+    </div>
+    <div style="background-image: url(almost\ final.avif);height: 110vh;width: 100%;">
+        <center>
+            <h1 style="font-size: 42px;margin: 0;padding-top: 55px;font-weight: 600;">Sustainability</h1>
+            <div style="margin-top: 24px;font-weight: lighter;">
+                <a class="s3" style="font-size: 20px;font-weight: bold;color: black;font-weight: 700;" href="">Certified
+                    Re-newed
+                </a>
+                <a class="s3"
+                    style="margin-left: 35px; text-decoration: none;font-size: 20px;font-weight: bold;color: black;font-weight: 700;"
+                    href=""> How to recycle</a>
+                <div style="margin-top: 460px;">
+                    <h1 style="font-size: 60px;margin: 0;font-weight: 1000;">Save more, do more for the planet</h1>
+                    <p style="font-size: 20px;margin: 0;font-weight: 300;">Lower your enviromental impact with a
+                        certified Re-Newed phone.</p>
+                    <a style="text-decoration: none;"
+                        href="https://www.samsung.com/us/televisions-home-theater/tvs/samsung-neo-qled-4k/85-class-qn90c-samsung-neo-qled-4k-smart-tv-2023-qn85qn90cafxza/?AID=11497444&PID=1225267&CID=afl-ecomm-cjn-cha-092118-53005&cjevent=652ec4dad7d511ec80a101dd0a82b82d&utm_source=Slickdeals+LLC&utm_medium=affiliate&utm_campaign=11497444&utm_content=1225267&cjdata=MXxOfDB8WXww">
+                        <button
+                            style="font-size: 15px;height: 50px;width: 100px;border-radius: 30px;background-color: black;color: white;margin-top: 10px;">
+                            Learn more
+                        </button></a>
+        </center>
+    </div>
+
+    <div style="height: 300vh;width: 100%;">
+        <center>
+            <h1 style="font-size: 42px; margin-top: 50px;font-weight: 1000; ">Explore Stories</h1>
+        </center>
+
+        <div style="height: 100vh; display: flex;margin-left: 20px;">
+            <div>
+                <img src="/./dude perfect.webp" alt="">
+            </div>
+
+            <div style="margin-top: 100px; width: 700px;margin-left: 40px;">
+                <div style="display: flex; gap: 40px;">
+                    <h1 style="font-size: 25px;">01</h1>
+                    <div>
+                        <h1 style="font-size: 30px;">
+                            Stay in the game with Galaxy AI and Dude Perfect
+                        </h1>
+                        <a style="font-size: 18px;color: black;"
+                            href="https://www.samsung.com/us/explore/brand/dudeperfect/">Learn more</a>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 40px;">
+                    <h1 style="font-size: 25px;">02</h1>
+                    <div>
+                        <h1 style="font-size: 30px;">
+                            Opening a galaxy of opportunities with Mr. Beast
+                        </h1>
+
+                    </div>
+                </div>
+                <div style="display: flex; gap: 40px;">
+                    <h1 style="font-size: 25px;">03</h1>
+                    <div>
+                        <h1 style="font-size: 30px;">
+                            The do-more-for-the-planet creator phone is here
+                        </h1>
+
+                    </div>
+                </div>
+                <div style="display: flex; gap: 40px;">
+                    <h1 style="font-size: 25px;">04</h1>
+                    <div>
+                        <h1 style="font-size: 30px;">
+                            Galaxy and Olymic Games 2024
+                        </h1>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 40px;">
+                    <h1 style="font-size: 25px;">05</h1>
+                    <div>
+                        <h1 style="font-size: 30px;">
+                            Go Big with Redbulls and Galaxy S24 Ultra
+                        </h1>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <center>
+            <h1 style="font-size: 40px;margin-top: 60px;">Looking for something else?</h1>
+
+            <div style="display: flex; width: fit-content;border: 1px solid black;border-radius: 30px; padding: 10px;width: 500px;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="44"
+                    height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                    <path d="M21 21l-6 -6" />
+                </svg>
+
+                <input placeholder="Search Keyword" style="border: none; font-size: 25px;">
+            </div>
+        </center>
+
+
+    </div>
+
+
+
 </body>
 
 </html>
